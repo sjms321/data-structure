@@ -9,7 +9,7 @@ struct student {
 };
 int PointFunction(struct student *std);
 
-int main()
+void main()
 {
         struct student st[10];
         int i, j,seed;
@@ -17,7 +17,7 @@ int main()
         double max = -1;
         double min = 101;
         int maxloc, minloc;
-	
+	//dd
 	seed=time(0);
 	srand(seed);
 
@@ -47,7 +47,7 @@ int main()
         printf("Average of Korea score %lf\n", total[2] / 10.0);
         printf("MAX average student = %c%c%c-->%lf\n",st[maxloc].name[0],st[maxloc].name[1],st[maxloc].name[2],max);
         printf("MIN average student = %c%c%c-->%lf\n",st[minloc].name[0],st[minloc].name[1],st[minloc].name[2],min);
-        return 0;
+        
 }
 int PointFunction(struct student*std)
 {
